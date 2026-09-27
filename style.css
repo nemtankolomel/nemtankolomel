@@ -94,7 +94,9 @@ main p {
     margin-bottom: 20px;
     color: var(--text-color);
 }
-
+main p.smaller {
+    font-size: 0.85em;
+}
 .stats-container {
     display: flex;
     gap: 20px;
