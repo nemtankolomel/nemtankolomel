@@ -1,9 +1,11 @@
 :root {
-    --bg-color: #121212;
-    --card-bg: #1e1e1e;
-    --text-color: #e0e0e0;
-    --accent-color: #ffcc00;
-    --button-hover: #e6b800;
+    --bg-color: #fdfbf7;
+    --card-bg: #f5eedf;
+    --text-color: #3d2b1f;
+    --title-color: #26160c;
+    --accent-color: #b83a23;
+    --button-hover: #9c2f1b;
+    --border-color: #e6dac3;
 }
 
 body {
@@ -39,10 +41,11 @@ h1 {
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 15px;
+    color: var(--title-color);
 }
 
 .subtitle {
-    color: #a0a0a0;
+    color: #6e5b4f;
     font-size: 1.1rem;
 }
 
@@ -63,7 +66,7 @@ h1 {
     font-weight: 600;
     padding: 15px 20px;
     color: #ffffff;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(38, 22, 12, 0.75);
     border-radius: 8px;
     width: 80%;
 }
@@ -77,22 +80,21 @@ h1 {
     max-width: 100%;
     height: auto;
     border-radius: 12px;
-    border: 1px solid #333;
+    border: 1px solid var(--border-color);
 }
 
 .img-caption {
     font-size: 0.85rem;
-    color: #888;
+    color: #8c7666;
     margin-top: 8px;
 }
 
 main p {
     font-size: 1.1rem;
     margin-bottom: 20px;
-    color: #cccccc;
+    color: var(--text-color);
 }
 
-/* ÚJ, SZÖVEGES SZÁMLÁLÓ RENDSZER STÍLUSA */
 .stats-container {
     display: flex;
     gap: 20px;
@@ -105,8 +107,8 @@ main p {
     padding: 25px 15px;
     border-radius: 12px;
     text-align: center;
-    border: 1px solid #2a2a2a;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 10px rgba(61, 43, 31, 0.08);
 }
 
 .stat-value {
@@ -118,7 +120,7 @@ main p {
 
 .stat-desc {
     font-size: 0.95rem;
-    color: #a0a0a0;
+    color: #6e5b4f;
 }
 
 .cta-text {
@@ -126,20 +128,22 @@ main p {
     font-weight: 700;
     font-size: 1.2rem !important;
     margin-top: 35px;
+    color: var(--title-color);
 }
 
 .cta-button {
     display: block;
     text-align: center;
     background-color: var(--accent-color);
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 700;
     font-size: 1.2rem;
     padding: 18px;
     border-radius: 8px;
     margin: 20px 0;
-    transition: background-color 0.2s ease;
+    box-shadow: 0 4px 12px rgba(184, 58, 35, 0.2);
+    transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
 .cta-button:hover {
@@ -148,7 +152,7 @@ main p {
 
 .disclaimer {
     font-size: 0.85rem !important;
-    color: #777777 !important;
+    color: #8c7666 !important;
     text-align: center;
     margin-top: 10px;
 }
@@ -156,9 +160,9 @@ main p {
 footer {
     margin-top: 50px;
     padding-top: 20px;
-    border-top: 1px solid #333;
+    border-top: 1px solid var(--border-color);
     text-align: center;
-    color: #888888;
+    color: #8c7666;
 }
 
 footer p {
