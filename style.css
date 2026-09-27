@@ -95,7 +95,7 @@ main p {
     color: var(--text-color);
 }
 main p.smaller {
-    font-size: 0.85em;
+    font-size: 0.9rem;
 }
 .stats-container {
     display: flex;
